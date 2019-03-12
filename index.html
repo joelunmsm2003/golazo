@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="css/form.css">
+   <link rel="stylesheet" href="css/formularios.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <script src="js/index.js" type="text/javascript"></script>
+   <title>CSS MenuMaker</title>
+</head>
+<body >
+
+<div id='cssmenu'>
+<ul>
+  
+
+   <li class='active has-sub'><a href='#'><span>inicio</span></a>
+      <ul>
+         <li class='has-sub' id='info'><a href='#'><span >Informacion Personal</span></a>
+           
+         </li>
+
+
+         <li class='has-sub'><a href='#'><span>Permisos</span></a>
+            <ul>
+               <li><a href='#'><span>Entrenador</span></a></li>
+               <li class='last'><a href='#'><span>Asistente</span></a></li>
+               <li class='last'><a href='#'><span>Visitante</span></a></li>
+            </ul>
+         </li>
+
+
+         <li class='has-sub'><a href='#'><span>Juegos</span></a>
+            <ul>
+               <li><a href='#'  id='n_juegos'><span>Nuevo Juego</span></a></li>
+               <li class='last' id="lista_juegos"><a href='#'><span>Juegos Guardados</span></a></li>
+            </ul>
+         </li>
+
+
+
+         <li class='has-sub'><a href='#'><span>Historial</span></a>
+            <ul>
+               <li><a href='#'><span>Juegos</span></a></li>
+               <li class='last' id='login'><a href='#'><span>Logueo</span></a></li>
+            </ul>
+         </li>
+
+         <li class='has-sub'><a href='#'><span>Juegadores</span></a>
+            <ul>
+               <li><a href='#' id='n_jugador'><span>Nuevo Jugadores</span></a></li>
+               <li class='last' id="lista_jugadores"><a href='#'><span>Jugadores Guardados</span></a></li>
+            </ul>
+         </li>
+
+
+
+         <li class='has-sub'><a href='#'><span>Calificaciones</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul>
+         </li>
+
+         <li class='has-sub'><a href='#'><span>Configuraciones</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul>
+         </li>
+
+         <li class='has-sub'><a href='#'><span>Bloquear</span></a>
+            <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Cerrar Sesion</span></a></li>
+            </ul>
+         </li>
+      </ul>
+
+   </li>
+   <li><a href='#'><span>About</span></a></li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+   <li><a href='#'><span>Home</span></a></li>
+</ul>
+</div>
+
+
+<form action="/my-handling-form-page" method="post" id='personales' onclick="personal">
+   <div class="cerrar">
+         <h1>X</h1>
+   </div>
+   
+   <h1>Datos Personales </h1>
+     <div>
+       <label for="name">Nombre Completo:</label>
+       <input type="text" id="name" name="user_name" value="Lucho Perez">
+     </div>
+    
+     <div>
+       <label for="msg">DNI:</label>
+       <input type="text" id="name" name="user_name" value='67654312'>
+     </div>
+
+
+            <div>
+             <label for="name">Telefono:</label>
+             <input type="text" id="name" name="user_name" value="7473328">
+           </div>
+         
+            <div>
+             <label for="mail">E-mail:</label>
+             <input type="email" id="mail" name="user_email" value="hola@gmail.com">
+           </div>
+
+         <div>
+                   <label for="name">Contraseña:</label>
+                   <input type="password" id="name" name="user_name" value="123456">
+                 </div>
+               
+         
+    
+     <div class="button">
+       <button type="submit">Guardar</button>
+     </div>
+   </form>
+
+   <form action="/my-handling-form-page" method="post" id='jugadores'>
+
+      <div class="cerrar">
+            <h1>X</h1>
+      </div>
+
+         <h1>Escoger jugador/ jugadores </h1>
+
+   <ol>
+
+         <li > Jose Luis Ramirez </li>
+         
+         <li>Jose Luis Ramirez  </li>
+         
+         <li> Jose Luis Ramirez  </li>
+         
+         </ol>
+         <div class="button">
+                   <button type="submit">Cancelar</button>
+                  <button type="submit">Siguiente</button>
+
+         </div>
+      </form> 
+
+
+      <form action="/my-handling-form-page" method="post" id='logueo'>
+
+         <div class="cerrar">
+               <h1>X</h1>
+         </div>
+         <h1>logueos </h1>
+
+         <table class="egt">
+
+               <tr>
+             
+                 <th>Entrada</th>
+             
+                 <th>User </th>
+             
+                 <th>Salida</th>
+             
+               </tr>
+             
+               <tr>            
+                     <td>15/02/19-14:20</td>
+             
+                     <td>Root</td>
+                 
+                     <td> 15/02/19-15:40</td>
+                 <td> <button type="submit">Detalle</button></td>
+                 <td>  <button type="submit">Enviar</button></td>
+                 <td>  <button type="submit">Archivar</button></td>
+             
+               </tr>
+             
+               <tr>
+             
+                 <td>15/02/19-14:20</td>
+             
+                 <td>Root</td>
+             
+                 <td> 15/02/19-15:40</td>
+
+                 <td> <button type="submit">Detalle</button></td>
+                 <td>  <button type="submit">Enviar</button></td>
+                 <td>  <button type="submit">Archivar</button></td>
+             
+               </tr>
+             
+               <tr>
+             
+                     <td>15/02/19-14:20</td>
+             
+                     <td>Root</td>
+                 
+                     <td> 15/02/19-15:40</td>
+
+                 <td> <button type="submit">Detalle</button></td>
+                 <td>  <button type="submit">Enviar</button></td>
+                 <td>  <button type="submit">Archivar</button></td>
+             
+               </tr>
+
+               </table>
+             
+      </form>
+      
+      
+
+
+      <form action="/my-handling-form-page" method="post" id='juegos'>
+
+         <div class="cerrar">
+               <h1>X</h1>
+         </div>
+         <h1>Listass   </h1>
+
+         <table class="egt">
+
+               <tr>
+             
+                 <th>Nombre</th>
+             
+                 <th>Fecha </th>
+             
+                 <th>Editar</th>
+                 <th>Eliminar</th>
+                 <th>Asignar</th>
+                 <th>Play</th>
+                 <th>Cancelar</th>
+
+             
+               </tr>
+             
+               <tr>
+             
+                     <td>15/02/19-14:20</td>
+             
+                     <td>Root</td>
+                 
+                  
+                 <td> <button type="submit">Editar</button></td>
+                 <td> <button type="submit">Eliminar</button></td>
+                 <td> <button type="submit">Asignar</button></td>
+                 <td>  <button type="submit">Play</button></td>
+                 <td>  <button type="submit">Cancelar</button></td>
+             
+               </tr>
+             
+               <tr>
+             
+                 <td>15/02/19-14:20</td>
+             
+                 <td>Root</td>
+             
+                 
+
+                 <td> <button type="submit">Editar</button></td>
+                 <td> <button type="submit">Eliminar</button></td>
+                 <td> <button type="submit">Asignar</button></td>
+                 <td>  <button type="submit">Play</button></td>
+                 <td>  <button type="submit">Cancelar</button></td>
+             
+               </tr>
+             
+               <tr>
+             
+                     <td>15/02/19-14:20</td>
+             
+                     <td>Root</td>
+                 
+                   
+
+                     <td> <button type="submit">Editar</button></td>
+                     <td> <button type="submit">Eliminar</button></td>
+                     <td> <button type="submit">Asignar</button></td>
+                     <td>  <button type="submit">Play</button></td>
+                     <td>  <button type="submit">Cancelar</button></td>
+             
+               </tr>
+
+         </table>
+             
+      </form> 
+
+
+
+
+      <form action="/my-handling-form-page" method="post" id='nuevo_juego'>
+         <div class="cerrar">
+               <h1>X</h1>
+         </div>
+         
+         <h1>Nuevo Juego </h1>
+           <div>
+             <label for="name">Nombre del Juego</label>
+             <input type="text" id="name" name="user_name" >
+           </div>
+          
+   
+           <div class="button">
+             <button type="submit">Guardar</button>
+           </div>
+         </form>
+
+
+
+
+
+
+         <form action="/my-handling-form-page" method="post" id='nuevo_jugador'>
+            <div class="cerrar">
+                  <h1>X</h1>
+            </div>
+            
+            <h1>Nuevo Jugador </h1>
+              <div>
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="user_name" >
+              </div>
+             
+              <div>
+                <label for="msg">Edad</label>
+                <input type="text" id="name" name="user_name" >
+              </div>
+         
+         
+                     <div>
+                      <label for="name">Posicion</label>
+                      <input type="text" id="name" name="user_name">
+                    </div>
+                  
+                     <div>
+                      <label for="mail">Pies Manejado</label>
+                      <input type="email" id="mail" name="user_email" >
+                    </div>
+         
+                  <div>
+                            <label for="name">Obserbacion</label>
+                            <input type="password" id="name" name="user_name" >
+                          </div>
+                        
+                  
+             
+              <div class="button">
+                <button type="submit">Guardar</button>
+              </div>
+            </form>
+
+            <div class='todo'>
+            <div class='grid-container'>
+
+              <div><button class="controles">MEMORIA</button>
+                  <button class="controles">AREA</button>
+                  <button class="controles">SECUENCIA</button>
+                  <button class="controles">ALEATORIO</button>
+                  <button class="controles">TIRO RASO</button>
+                  <button class="controles">INTERMITENTE</button>
+                  <button class="controles">INICIO/FIN</button>
+
+              </div>
+              <div class='arco_horizontal'>
+                
+                  <!--PRIMER ARCO-->
+                  <div class='A1'>A1</div>
+
+                        <div class='A2'>A2</div>
+                        <div class='A3'>A3</div>
+                        <div class='A4'>A4</div>
+                        <div class='A5'>A5</div>
+                        <div class='A6'>A6</div>
+                        <div class='A7'>A7</div>
+                        <div class='A8'>A8</div>
+  
+                  <div>B1</div>
+
+
+                        <div class='B2'>B2</div>
+                        <div class='B3'>B3</div>
+                        <div class='B4'>B4</div>
+                        <div class='B5'>B5</div>
+                        <div class='B7'>B7</div>
+                        <div class='B8'>B8</div>
+
+
+                  <div>C1</div>
+                        <div class='C3'>C3</div>
+                        <div class='C4'>C4</div>
+                        <div class='C5'>C5</div>
+                        <div class='C7'>C7</div>
+                        <div class='C8'>C8</div>
+
+
+                  <div>D1</div>
+                        <div class='D4'>D4</div>
+                        <div class='D5'>D5</div>
+                        <div class='D7'>D7</div>
+                        <div class='D8'>D8</div>
+                  <div>E1</div>
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+
+                  <div>F1</div>
+                        <div class='F2'>F2</div>
+                        <div class='F3'>F3</div>
+                        <div class='F4'>F4</div>
+
+                  <div>G1</div>
+                        <div class='G2'>G2</div>
+                        <div class='G3'>G3</div>
+                        <div class='G4'>G4</div>
+
+                  <div>H1</div>
+                        <div class='H2'>H2</div>
+                        <div class='H3'>H3</div>
+                        <div class='H4'>H4</div>
+
+                  <div>I1</div>
+                        <div class='I2'>I2</div>
+                        <div class='I3'>I3</div>
+                        <div class='I4'>I4</div>
+
+
+                  <div>J1</div>
+
+                        <div class='J2'>J2</div>
+                        <div class='J3'>J3</div>
+                        <div class='J4'>J4</div>
+                  <div>K1</div>
+
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>L1</div>
+
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>M1</div>
+
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>N1</div>
+
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>Ñ1</div>
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>O1</div>
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>P1</div>
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>Q1</div>
+
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>R1</div>
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>S1</div>
+                        <div class='E2'>E2</div>
+                        <div class='E3'>E3</div>
+                        <div class='E4'>E4</div>
+                  <div>T1</div>
+                  <div>U1</div>
+                  <div>V1</div>
+
+
+                          <!--SEGUNDO ARCO-->
+                          <div class='B2'>B2</div>
+                          <div class='C2'>C2</div>
+                          <div class='D2'>D2</div>
+                          <div class='E2'>E2</div>
+                          <div class='F2'>F2</div>
+                          <div class='G2'>G2</div>
+                          <div class='H2'>H2</div>
+                          <div class='I2'>I2</div>
+                          <div class='J2'>J2</div>
+                          <div class='K2'>K2</div>
+                          <div class='L2'>L2</div>
+                          <div class='M2'>M2</div>
+                          <div class='N2'>N2</div>
+                          <div class='Ñ2'>Ñ2</div>
+                          <div class='O2'>O2</div>
+                          <div class='P2'>P2</div>
+                          <div class='Q2'>Q2</div>
+                          <div class='R2'>R2</div>
+                          <div class='S2'>S2</div>
+                          <div class='T2'>T2</div>
+                          <div class='U2'>U2</div>
+
+                          <!--TERCER ARCO-->
+                          <div class='C3'>C3</div>
+                          <div class='D3'>D3</div>
+                          <div class='E3'>E3</div>
+                          <div class='F3'>F3</div>
+                          <div class='G3'>G3</div>
+                          <div class='H3'>H3</div>
+                          <div class='I3'>I3</div>
+                          <div class='J3'>J3</div>
+                          <div class='K3'>K3</div>
+                          <div class='L3'>L3</div>
+                          <div class='M3'>M3</div>
+                          <div class='N3'>N3</div>
+                          <div class='Ñ3'>Ñ3</div>
+                          <div class='O3'>O3</div>
+                          <div class='P3'>P3</div>
+                          <div class='Q3'>Q3</div>
+                          <div class='R3'>R3</div>
+                          <div class='S3'>S3</div>
+                          <div class='T3'>T3</div>
+
+                          <!--CUARTO ARCO-->
+
+                          <div class='D4'>D4</div>
+                          <div class='E4'>E4</div>
+                          <div class='F4'>F4</div>
+                          <div class='G4'>G4</div>
+                          <div class='H4'>H4</div>
+                          <div class='I4'>I4</div>
+                          <div class='J4'>J4</div>
+                          <div class='K4'>K4</div>
+                          <div class='L4'>L4</div>
+                          <div class='M4'>M4</div>
+                          <div class='N4'>N4</div>
+                          <div class='Ñ4'>Ñ4</div>
+                          <div class='O4'>O4</div>
+                          <div class='P4'>P4</div>
+                          <div class='Q4'>Q4</div>
+                          <div class='R4'>R4</div>
+                          <div class='S4'>S4</div>
+                        
+
+
+
+
+
+
+
+              </div>
+
+              
+              <div class='circulos'>
+
+
+                  <div></div>
+                  <div></div> 
+                  <div></div>
+                  <div></div>
+                  <div></div>
+
+                  
+
+            </div>
+
+            </div>
+
+          </div>
+           
+          
+
+
+
+<style>
+
+
+
+
+.grid-container{
+
+  margin:2% 1% 0 1%;
+  display:grid;
+  grid-template-columns: 9% 80% 9%;
+  grid-column-gap: 1px;
+  
+}
+
+.grid-container div{
+
+  border:1px solid red;
+}
+
+.arco_horizontal{
+  display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(23, 1fr);
+    grid-gap: 5px;
+    /* grid-auto-rows: 100px; */
+    grid-auto-rows: minmax(5px, auto);
+
+}
+
+.arco_horizontal div{
+
+  border:1px solid green;
+}
+.circulos{
+
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2%;
+  padding:1em;
+}
+
+.A1{
+    grid-column: 1;
+    grid-row: 1/1;
+}
+
+.A2{
+    grid-column: 1;
+    grid-row: 2/2;
+}
+
+.A3{
+    grid-column: 1;
+    grid-row: 3/3;
+}
+
+.A4{
+    grid-column: 1;
+    grid-row: 4/4;
+}
+
+
+.A5{
+    grid-column: 1;
+    grid-row: 5/5;
+}
+
+
+.A6{
+    grid-column: 1;
+    grid-row: 6/6;
+}
+
+
+.A7{
+    grid-column: 1;
+    grid-row: 7/7;
+}
+
+.A8{
+    grid-column: 1;
+    grid-row: 8/8;
+}
+
+
+
+.B1{
+    grid-column: 2;
+    grid-row: 1/1;
+}
+
+.B3{
+    grid-column: 2;
+    grid-row: 3/3;
+}
+
+
+.C1{
+    grid-column: 3;
+    grid-row: 1/1;
+}
+
+
+
+.controles{
+
+    background-color: #37a0fb;
+    border: none;
+    color: white !important;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 8px 0px 1px 0px;
+    cursor: pointer;
+    color: black;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.circulos div{
+
+  border: 1px solid #123;
+    padding: 14px;
+    
+
+}
+
+</style>
+<script>
+
+   html2canvas(document.body, {
+  onrendered (canvas) {
+    var link = document.getElementById('download');;
+    var image = canvas.toDataURL();
+    link.href = image;
+    link.download = 'screenshot.png';
+  }
+ });
+
+
+
+</script>
+         
+</body>
+
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  
+
+    <script>
+
+         html2canvas(document.body, {
+        onrendered (canvas) {
+          var link = document.getElementById('download');;
+          var image = canvas.toDataURL();
+          link.href = image;
+          link.download = 'screenshot.png';
+        }
+       });
+      </script>
+               
+
+
+<html>
+
+
+     
+     
+
