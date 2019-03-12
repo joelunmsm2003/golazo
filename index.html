@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="grid.css">
    <link rel="stylesheet" href="css/form.css">
    <link rel="stylesheet" href="css/grid.css">
    <link rel="stylesheet" href="css/formularios.css">
@@ -422,6 +423,83 @@
                         <div class='E2'>E2</div>
                         <div class='E3'>E3</div>
                         <div class='E4'>E4</div>
+                        <div class='E5'>
+
+                      <style>
+                        main{
+   margin:0 auto;
+   width:500px; 
+}
+#tiempo{
+
+  text-align:center;
+ }
+ .yellow{
+  color:rgb(241,218,78);
+}
+                      </style>
+
+
+
+
+  <main>
+  
+  <div id="tiempo">00:00:00</div>
+</main>
+
+  <main>
+  
+  <div id="tiempo">00:00:00</div>
+</main>
+
+  <main>
+  
+  <div id="tiempo">00:00:00</div>
+</main>
+
+<script type="text/javascript">
+  
+     var timeout, min, seg=59, tiempo = $('#tiempo');
+ 
+   function zeroIzq(n){
+        if(n<=9&&n>=0){
+            return '0'+n;
+        }else{
+            return n;
+        }
+    }
+
+    function regresivo(limite){
+        var cron;
+        if(min==limite){
+            min=min-1;
+        }
+        if(min==0&&seg==0){
+            clearTimeout(timeout);
+            tiempo.html( '00:00:00');
+        }else{
+            cron='00:'+min+':'+zeroIzq(seg);
+            tiempo.html(cron);
+            seg=seg-1;
+                if(seg==0&&min>0){
+                    min=min-1;
+                    seg=59;
+                }
+            timeout = setTimeout(regresivo,100);
+        }
+    }
+ 
+ function iniciar(limite){
+        min=limite;
+        clearTimeout(timeout);
+        regresivo(limite);
+    }
+$(document).ready( iniciar(10) );
+
+</script>
+
+
+                        </div>
 
                   <div>F1</div>
                         <div class='F2'>F2</div>
